@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">       
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">  	
+    </script>
+	<link rel="stylesheet" href="./css/style.css">
+	<title>WebToeic</title>
+</head>
+<body>
+	<!-- thẻ navigation là thẻ đứng đầu trang web
+		sticky-top dính trên đỉnh
+		kích thức medium
+	 -->
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+		<!-- thẻ div container-fluid chiếm toàn bộ chiều ngang -->
+
+		<div class="container-fluid">
+			<!-- thẻ "navbar-branch" chứa cái ảnh đại diện cho thương hiệu -->
+			<a href="#" class="navbar-branch">
+				<img src="./images/logo.jpg" alt="" height="130px" style="margin-left: 80px">
+			</a>
+			<a href="#" class="navbar-branch">
+				<img src="./images/logo_text_tamn.png" alt="" height="50px" >
+			</a>
+			<!-- navbar-toggler bấm 1 cái thì có thẻ div hiện ra bấm 1 cái nữa là nó tắt
+			data-toggle="collapse" biến mất như kéo rèm -->
+			<button class="navbar-toggler" type="button" 
+			data-toggle="collapse" data-target="#navbarResponsive">
+			<!-- navbar-toggler-icon biểu tượng 3 gạch như thanh menu -->
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- div này sẽ hiện ra khi bấm nút ở trên 2 thẻ link với nhua qua thẻ id -->
+			<!-- data-target="#navbarResponsive" và thẻ id ở thẻ div liên ketes với nhau để nhìn thấy nhau -->
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<!-- ml-auto hiện các đường link khi co trang -->
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a href="#" class="nav-link active">Trang chủ</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Chuyên đề</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Danh mục</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Mẹo thi toeic </a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Connect</a>
+					</li>
+					
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+	<!-- slide -->
+	<div id="slides" class="carousel slide" data-ride="carousel">
+		<!-- carousel-indicators:nút ngắn ngắn trắng trắng bấm vào là chuyển slide -->
+		<ul class="carousel-indicators">
+			<li data-target="#slides" data-slide-to="0" class="active"></li>
+			<li data-target="#slides" data-slide-to="1" ></li>
+			<li data-target="#slides" data-slide-to="2"></li>
+			<li data-target="#slides" data-slide-to="3" ></li>
+		</ul>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="./images/girl.jpg" alt="">
+				<div class="carousel-caption">
+					<h1 class="display-2">Xem khóa học</h1>
+					<h3>Xin chào mọi người.</h3>
+					<!-- btn-outline-light button khoong ko hình nền background nhưng có viền . btn-lg: nút to-->
+					<button type="button" class="btn btn-outline-light btn-lg">
+						VIEW TUTORIALS
+					</button>
+					<!-- btn btn-primary btn-lg button của bôtrap có màu xanh -->
+					<button type="button" class="btn btn-primary btn-lg">Get started</button>
+				</div>
+			</div>
+			<div class="carousel-item ">
+				<img src="./images/girl.jpg" alt="">
+			</div>
+			<div class="carousel-item ">
+				<img src="./images/background.jpg" alt="">
+			</div>
+			<div class="carousel-item ">
+				<img src="./images/background.jpg" alt="">
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#slides" data-slide="prev">
+    		<span class="carousel-control-prev-icon"></span>
+  		</a>
+		<a class="carousel-control-next" href="#slides" data-slide="next">
+		    <span class="carousel-control-next-icon"></span>
+		</a>
+	</div>
+<!-- jumbotron : quảng cáo marketing -->
+<div class="container-fluid">
+	<div class="jumbotron">
+		<!-- col-xs-12:extra small size thiết bị nhỏ gộp 12 cột
+				 col-xm-12 col-md-9 col-lg-9 col-xl-10: -->
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+			<p>Lấy lại nền tảng tiếng Anh căn bản
+			Bạn muốn lấy lại nền tảng tiếng Anh trước khi bắt đầu luyện thi?</p>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+			<a href="#">
+				<!-- btn btn-outline-secondary :nút bấm chưa có nền có màu.xámf -->
+				<button type="button" class="btn btn-outline-secondary">Khóa học tiếng anh</button>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">Tiếng anh mỗi ngày</h1>
+		</div>
+		<!-- horizontal rule: đường kẻ -->
+		<hr>
+		<div class="col-12">
+			<p>Hướng dẫn học tiếng anh mỗi ngày để giúp cho các bạn thi thật sự tốt.Những tính năng bổ trợ
+				giúp bạn dễ dàng tiếp thu.	
+			</p>
+		</div>
+	</div>
+</div>
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-xs-12 col-sm-6  col-md-4">
+			<i class="fab fa-stack-exchange"></i>
+			<h3>Học ngữ pháp</h3>
+			<p>Chương trình ngữ pháp tiếng anh căn bản</p>
+		</div>
+		<div class="col-xs-12 col-sm-6  col-md-4">
+			<i class="fab fa-first-order"></i>
+			<h3>Học từ vựng</h3>
+			<p>Chương trình học từ vựng tiếng anh căn bản</p>
+		</div>
+		<div class="col-xs-12 col-sm-6  col-md-4">
+			<i class="fab fa-weibo"></i>
+			<h3>Học nghe</h3>
+			<p>Chương trình nghe luyện tiếng anh căn bản</p>
+		</div>
+	</div>
+	<hr class="my-4">
+</div>
+<div class="container-fluid padding">
+	<div class="row padding">
+		<div class="col-md-12 col-lg-6">
+			<h2>Các phần TOEIC cần luyện trong cột mốc này</h2>
+			<p>Chương trình dạy học và thi tiếng anh online giúp các bạn nắm vững được tiếng anh.</p>
+			<p>Hệ thống giúp chúng ta nắm vững từng phần trong thi toeic.Dễ dàng học,chương trình dạy hiệu quả cho những người luyện thi.</p>
+		</div>
+		<div class="col-lg-6">
+			<img src="./images/important.jpg" class="img-fluid">
+		</div>
+	</div>
+</div>
+<hr class="my-2">
+<!-- data-toggle="collapse" :giúp ẩn hiện trrang fun -->
+<button class="fun" data-toggle="collapse" data-target="#emoji"> 
+	Click fun
+</button>	
+<div class="collapse" id="emoji">
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-sm-6 col-md-3">
+				<img src="./images/gif/blinkEyes.gif" class="gif" width="100" height="100">
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<img src="./images/gif/blinkGirl.gif" class="gif" width="100" height="100">
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<img src="./images/gif/faceHaHa.gif" class="gif" width="100" height="100">
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<img src="./images/gif/haha.gif" class="gif" width="100" height="100">
+			</div>
+		</div>
+	</div>
+</div>	
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4"> Những người ưu tú trong khóa ôn thi của chúng tôi</h1>
+		</div>
+	</div>
+</div>
+<div class="container-fluid padding">
+	<div class="row padding">
+		<div class="col-md-4">
+			<div class="card">
+				<img src="./images/Natasha.png" class="card-img-top">
+				<div class="card-body">
+					<h4 class="card-title">Trương Công Mẫn</h4>
+					<p>Cristiano Ronaldo là một người chăm chỉ khổ luyện.</p>
+					<a href="#" class="btn btn-outline-secondary">See profile</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+				<img src="./images/Natasha.png" class="card-img-top">
+				<div class="card-body">
+					<h4 class="card-title">HOàng Bò</h4>
+					<p>Cristiano Ronaldo là một người chăm chỉ khổ luyện.</p>
+					<a href="#" class="btn btn-outline-secondary">See profile</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+				<img src="./images/Natasha.png" class="card-img-top">
+				<div class="card-body">
+					<h4 class="card-title">Khánh Sky</h4>
+					<p>Cristiano Ronaldo là một người chăm chỉ khổ luyện.</p>
+					<a href="#" class="btn btn-outline-secondary">See profile</a>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+<div class="container-fluid padding">
+	<div class="row padding">
+		<div class="col-md-12 col-lg-6">
+			<h2>Our vision</h2>
+			<p>Tiếng anh là một phần quan trọng trong công việc của chúng ta</p>
+			<p>Tiếng anh giúp chúng ta giao tiếp tốt với người nước ngoài.</p>
+			<br>
+		</div>
+		<div class="col-lg-6">
+			<img src="./images/background.jpg" class="img-fluid">
+		</div>
+	</div>
+	<hr class="my-4">
+</div>
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-12">
+			<h2>Contact us</h2>
+		</div>
+		<div class="col-12 social padding">
+			<a href="#"><i class="fab fa-facebook"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-google-plus-g"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-youtube"></i></a>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-md-4">
+				<img src="./images/logo.png" class="">
+				<hr class="light">
+				<p>111-222-333</p>
+				<p>Huhu@gmail.com</p>
+				<p>Ho Chi Minh city</p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Giờ làm việc</h5>
+				<hr class="light">
+				<p>Thứ 2 đến thứ 6</p>
+				<p>Thứ 7-Chủ nhật: 8am-12am</p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Service</h5>
+				<hr class="light">
+				<p>MobileApp</p>
+				<p>Website</p>
+			</div>
+			<div class="col-12">
+				<hr class="light-100">
+				<h5>&copy;WebToeic(2020)</h5>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
+
+
+
+
